@@ -1,21 +1,25 @@
 package com.tunaemre.opencv.faceswap;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
 import com.tunaemre.opencv.faceswap.R;
+import com.tunaemre.opencv.faceswap.view.ExtendedActivity;
 
-public class MainActivity extends Activity
+public class MainActivity extends ExtendedActivity
 {
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+	}
+
+	@Override
+	protected void prepareActivity()
+	{
 		findViewById(R.id.btnMainFaceSwap).setOnClickListener(new OnClickListener()
 		{
 			@Override
