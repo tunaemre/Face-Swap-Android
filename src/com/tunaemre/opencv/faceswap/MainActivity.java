@@ -1,12 +1,17 @@
 package com.tunaemre.opencv.faceswap;
 
+import java.io.File;
+
+import com.tunaemre.opencv.faceswap.app.ExtendedActivity;
+import com.tunaemre.opencv.faceswap.constant.Constant;
+import com.tunaemre.opencv.faceswap.util.CacheOperator;
+
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
-import com.tunaemre.opencv.faceswap.R;
-import com.tunaemre.opencv.faceswap.view.ExtendedActivity;
 
 public class MainActivity extends ExtendedActivity
 {
@@ -14,6 +19,15 @@ public class MainActivity extends ExtendedActivity
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
+		
+		if (!checkFaceLandmarkFile())
+		{
+			startActivity(new Intent(this, DownloaderActivity.class));
+			finish();
+			
+			return;
+		}
+		
 		setContentView(R.layout.activity_main);
 	}
 
@@ -29,7 +43,7 @@ public class MainActivity extends ExtendedActivity
 			}
 		});
 		
-		findViewById(R.id.btnMainFaceMask).setOnClickListener(new OnClickListener()
+		findViewById(R.id.btnMainPhotoMask).setOnClickListener(new OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -37,5 +51,11 @@ public class MainActivity extends ExtendedActivity
 				Toast.makeText(MainActivity.this, "Under developing.", Toast.LENGTH_SHORT).show();
 			}
 		});
+	}
+	
+	private boolean checkFaceLandmarkFile()
+	{
+		File localFile = new File(MainActivity.this.getDir(Constant.FaceLandmarksDownloadPath, Context.MODE_PRIVATE), Constant.FaceLandmarksFileName);
+		return localFile.exists() && CacheOperator.getInstance(MainActivity.this).getFaceLandmarksDownloaded();
 	}
 }

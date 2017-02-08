@@ -2,11 +2,12 @@ package com.tunaemre.opencv.faceswap.view;
 
 import java.util.List;
 
-import com.tunaemre.opencv.faceswap.R;
 import org.opencv.android.FpsMeter;
 import org.opencv.android.Utils;
 import org.opencv.core.Mat;
 import org.opencv.core.Size;
+
+import com.tunaemre.opencv.faceswap.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;

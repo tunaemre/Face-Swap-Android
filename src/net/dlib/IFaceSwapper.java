@@ -14,6 +14,7 @@ public class IFaceSwapper
 		System.loadLibrary("faceswapper");
 	}
 
+	@Deprecated
 	public static String copyPoseModel(Context context, int modelResId, String modelName)
 	{
 		try
