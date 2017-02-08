@@ -10,13 +10,9 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 
 ifdef OPENCV_ANDROID_SDK
-  ifneq ("","$(wildcard $(OPENCV_ANDROID_SDK)/OpenCV.mk)")
-    include ${OPENCV_ANDROID_SDK}/OpenCV.mk
-  else
-    include ${OPENCV_ANDROID_SDK}/sdk/native/jni/OpenCV.mk
-  endif
+  include ${OPENCV_ANDROID_SDK}/sdk/native/jni/OpenCV.mk
 else
-  include ../../sdk/native/jni/OpenCV.mk
+  include C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/OpenCV.mk
 endif
 
 LOCAL_C_INCLUDES += $(LOCAL_PATH)
@@ -30,13 +26,9 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 
 ifdef OPENCV_ANDROID_SDK
-  ifneq ("","$(wildcard $(OPENCV_ANDROID_SDK)/OpenCV.mk)")
-    include ${OPENCV_ANDROID_SDK}/OpenCV.mk
-  else
-    include ${OPENCV_ANDROID_SDK}/sdk/native/jni/OpenCV.mk
-  endif
+  include ${OPENCV_ANDROID_SDK}/sdk/native/jni/OpenCV.mk
 else
-  include ../../sdk/native/jni/OpenCV.mk
+  include C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/OpenCV.mk
 endif
 
 OPENCV_CAMERA_MODULES:=on

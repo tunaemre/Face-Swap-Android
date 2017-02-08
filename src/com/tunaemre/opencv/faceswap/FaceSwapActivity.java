@@ -16,11 +16,12 @@ import org.opencv.core.MatOfRect;
 import org.opencv.core.Rect;
 import org.opencv.facedetect.IDetectionBasedTracker;
 
-import com.tunaemre.opencv.faceswap.R;
+import com.tunaemre.opencv.faceswap.constant.Constant;
 import com.tunaemre.opencv.faceswap.view.ExtendedCameraView;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
@@ -35,6 +36,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.WindowManager;
 import android.widget.ImageButton;
+import android.widget.Toast;
 import net.dlib.IFaceSwapper;
 
 public class FaceSwapActivity extends Activity
@@ -326,21 +328,17 @@ public class FaceSwapActivity extends Activity
 		@SuppressLint("NewApi")
 		private void Run()
 		{
-			new requestTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+			new BaseAsyncTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 			findViewById(R.id.progressBar).setVisibility(View.VISIBLE);
 		}
 
-		private class requestTask extends AsyncTask<Void, Void, Boolean>
+		private class BaseAsyncTask extends AsyncTask<Void, Void, Boolean>
 		{
 			protected Boolean doInBackground(Void... args)
 			{
 				try
 				{
-					String poseModelPath = IFaceSwapper.copyPoseModel(getApplicationContext(), R.raw.shape_predictor_68_face_landmarks, "shape_predictor_68_face_landmarks.dat");
-
-					if (poseModelPath == null) return false;
-					
-					Log.i("FaceSwapper", "PoseModel copied successfully");
+					String poseModelPath = new File(FaceSwapActivity.this.getDir(Constant.FaceLandmarksDownloadPath, Context.MODE_PRIVATE), Constant.FaceLandmarksFileName).getAbsolutePath();
 
 					if (!IFaceSwapper.loadPoseModel(poseModelPath)) return false;
 					
@@ -368,10 +366,9 @@ public class FaceSwapActivity extends Activity
 			{
 				mIsRuntimeFilesLoaded = result;
 				
-				if (result && mOpenCvCameraView != null)
-				{
-					mOpenCvCameraView.enableView();
-				}
+				if (result && mOpenCvCameraView != null) mOpenCvCameraView.enableView();
+				else
+					Toast.makeText(FaceSwapActivity.this, "Runtime error.", Toast.LENGTH_SHORT).show();
 				
 				findViewById(R.id.progressBar).setVisibility(View.GONE);
 			}

@@ -1,42 +1,42 @@
 ./obj/local/armeabi-v7a/objs/faceswapper/FaceSwapper.o: \
   jni/FaceSwapper.cpp jni/FaceSwapper.h \
-  ../../sdk/native/jni/include\opencv2/imgproc.hpp \
-  ../../sdk/native/jni/include\opencv2/core.hpp \
-  ../../sdk/native/jni/include\opencv2/core/cvdef.h \
-  ../../sdk/native/jni/include\opencv2/core/hal/interface.h \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/imgproc.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/cvdef.h \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/hal/interface.h \
   C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\cstddef \
   C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\cstdint \
-  ../../sdk/native/jni/include\opencv2/core/version.hpp \
-  ../../sdk/native/jni/include\opencv2/core/base.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/version.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/base.hpp \
   C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\climits \
   C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\algorithm \
-  ../../sdk/native/jni/include\opencv2/core/cvstd.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/cvstd.hpp \
   C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\cstring \
   C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\cctype \
   C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\cstdlib \
   C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\cmath \
-  ../../sdk/native/jni/include\opencv2/core/ptr.inl.hpp \
-  ../../sdk/native/jni/include\opencv2/core/neon_utils.hpp \
-  ../../sdk/native/jni/include\opencv2/core/traits.hpp \
-  ../../sdk/native/jni/include\opencv2/core/matx.hpp \
-  ../../sdk/native/jni/include\opencv2/core/saturate.hpp \
-  ../../sdk/native/jni/include\opencv2/core/fast_math.hpp \
-  ../../sdk/native/jni/include\opencv2/core/types.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/ptr.inl.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/neon_utils.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/traits.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/matx.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/saturate.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/fast_math.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/types.hpp \
   C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\cfloat \
-  ../../sdk/native/jni/include\opencv2/core/mat.hpp \
-  ../../sdk/native/jni/include\opencv2/core/bufferpool.hpp \
-  ../../sdk/native/jni/include\opencv2/core/mat.inl.hpp \
-  ../../sdk/native/jni/include\opencv2/core/persistence.hpp \
-  ../../sdk/native/jni/include\opencv2/core/operations.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/mat.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/bufferpool.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/mat.inl.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/persistence.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/operations.hpp \
   C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\cstdio \
-  ../../sdk/native/jni/include\opencv2/core/cvstd.inl.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/cvstd.inl.hpp \
   C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\complex \
-  ../../sdk/native/jni/include\opencv2/core/utility.hpp \
-  ../../sdk/native/jni/include\opencv2/core/core_c.h \
-  ../../sdk/native/jni/include\opencv2/core/types_c.h \
-  ../../sdk/native/jni/include\opencv2/core/optim.hpp \
-  ../../sdk/native/jni/include\opencv2/imgproc/imgproc_c.h \
-  ../../sdk/native/jni/include\opencv2/imgproc/types_c.h \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/utility.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/core_c.h \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/types_c.h \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/optim.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/imgproc/imgproc_c.h \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/imgproc/types_c.h \
   jni/dlib/geometry/rectangle.h jni/dlib/geometry/rectangle_abstract.h \
   jni/dlib/geometry/../algs.h jni/dlib/geometry/../platform.h \
   jni/dlib/geometry/../windows_magic.h jni/dlib/geometry/../assert.h \
@@ -258,32 +258,32 @@
   jni/dlib/geometry/../statistics/lda.h \
   jni/dlib/geometry/../statistics/lda_abstract.h \
   jni/dlib/opencv/cv_image.h \
-  ../../sdk/native/jni/include\opencv2/core/core.hpp \
+  C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/core.hpp \
   jni/dlib/opencv/cv_image_abstract.h jni/dlib/opencv/../algs.h
 
 jni/FaceSwapper.h:
 
-../../sdk/native/jni/include\opencv2/imgproc.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/imgproc.hpp:
 
-../../sdk/native/jni/include\opencv2/core.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core.hpp:
 
-../../sdk/native/jni/include\opencv2/core/cvdef.h:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/cvdef.h:
 
-../../sdk/native/jni/include\opencv2/core/hal/interface.h:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/hal/interface.h:
 
 C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\cstddef:
 
 C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\cstdint:
 
-../../sdk/native/jni/include\opencv2/core/version.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/version.hpp:
 
-../../sdk/native/jni/include\opencv2/core/base.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/base.hpp:
 
 C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\climits:
 
 C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\algorithm:
 
-../../sdk/native/jni/include\opencv2/core/cvstd.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/cvstd.hpp:
 
 C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\cstring:
 
@@ -293,49 +293,49 @@ C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/incl
 
 C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\cmath:
 
-../../sdk/native/jni/include\opencv2/core/ptr.inl.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/ptr.inl.hpp:
 
-../../sdk/native/jni/include\opencv2/core/neon_utils.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/neon_utils.hpp:
 
-../../sdk/native/jni/include\opencv2/core/traits.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/traits.hpp:
 
-../../sdk/native/jni/include\opencv2/core/matx.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/matx.hpp:
 
-../../sdk/native/jni/include\opencv2/core/saturate.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/saturate.hpp:
 
-../../sdk/native/jni/include\opencv2/core/fast_math.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/fast_math.hpp:
 
-../../sdk/native/jni/include\opencv2/core/types.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/types.hpp:
 
 C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\cfloat:
 
-../../sdk/native/jni/include\opencv2/core/mat.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/mat.hpp:
 
-../../sdk/native/jni/include\opencv2/core/bufferpool.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/bufferpool.hpp:
 
-../../sdk/native/jni/include\opencv2/core/mat.inl.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/mat.inl.hpp:
 
-../../sdk/native/jni/include\opencv2/core/persistence.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/persistence.hpp:
 
-../../sdk/native/jni/include\opencv2/core/operations.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/operations.hpp:
 
 C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\cstdio:
 
-../../sdk/native/jni/include\opencv2/core/cvstd.inl.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/cvstd.inl.hpp:
 
 C:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\complex:
 
-../../sdk/native/jni/include\opencv2/core/utility.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/utility.hpp:
 
-../../sdk/native/jni/include\opencv2/core/core_c.h:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/core_c.h:
 
-../../sdk/native/jni/include\opencv2/core/types_c.h:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/types_c.h:
 
-../../sdk/native/jni/include\opencv2/core/optim.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/optim.hpp:
 
-../../sdk/native/jni/include\opencv2/imgproc/imgproc_c.h:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/imgproc/imgproc_c.h:
 
-../../sdk/native/jni/include\opencv2/imgproc/types_c.h:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/imgproc/types_c.h:
 
 jni/dlib/geometry/rectangle.h:
 
@@ -795,7 +795,7 @@ jni/dlib/geometry/../statistics/lda_abstract.h:
 
 jni/dlib/opencv/cv_image.h:
 
-../../sdk/native/jni/include\opencv2/core/core.hpp:
+C:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/core.hpp:
 
 jni/dlib/opencv/cv_image_abstract.h:
 
