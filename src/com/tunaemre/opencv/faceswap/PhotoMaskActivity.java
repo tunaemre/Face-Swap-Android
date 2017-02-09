@@ -16,6 +16,7 @@ import org.opencv.core.MatOfRect;
 import org.opencv.core.Rect;
 import org.opencv.facedetect.IDetectionBasedTracker;
 
+import com.tunaemre.opencv.faceswap.app.UnderDevelopment;
 import com.tunaemre.opencv.faceswap.constant.Constant;
 import com.tunaemre.opencv.faceswap.view.ExtendedCameraView;
 
@@ -39,6 +40,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 import net.dlib.IFaceSwapper;
 
+@UnderDevelopment
 public class PhotoMaskActivity extends Activity
 {
 	static

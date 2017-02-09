@@ -7,6 +7,8 @@ import org.opencv.core.Mat;
 import org.opencv.core.Size;
 import org.opencv.imgproc.Imgproc;
 
+import com.tunaemre.opencv.faceswap.app.UnderDevelopment;
+
 import android.content.Context;
 import android.graphics.ImageFormat;
 import android.graphics.SurfaceTexture;
@@ -17,15 +19,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.ViewGroup.LayoutParams;
 
-/**
- * This class is an implementation of the Bridge View between OpenCV and Java
- * Camera. This class relays on the functionality available in base class and
- * only implements required functions: connectCamera - opens Java camera and
- * sets the PreviewCallback to be delivered. disconnectCamera - closes the
- * camera and stops preview. When frame is delivered via callback from Camera -
- * it processed via OpenCV to be converted to RGBA32 and then passed to the
- * external callback for modifications if required.
- */
+
+@UnderDevelopment
 public class PortraitCameraView extends PortraitCameraBridgeViewBase implements PreviewCallback
 {
 
@@ -167,7 +162,6 @@ public class PortraitCameraView extends PortraitCameraBridgeViewBase implements 
 
 			if (mCamera == null) return false;
 
-			/* Now set camera parameters */
 			try
 			{
 				Camera.Parameters params = mCamera.getParameters();
@@ -176,10 +170,6 @@ public class PortraitCameraView extends PortraitCameraBridgeViewBase implements 
 
 				if (sizes != null)
 				{
-					/*
-					 * Select the size that fits surface considering maximum
-					 * size allowed
-					 */
 					Size frameSize = calculateCameraFrameSize(sizes, new JavaCameraSizeAccessor(), width, height);
 
 					params.setPreviewFormat(ImageFormat.NV21);
@@ -235,7 +225,6 @@ public class PortraitCameraView extends PortraitCameraBridgeViewBase implements 
 					else
 						mCamera.setPreviewDisplay(null);
 
-					/* Finally we are ready to start the preview */
 					Log.d(TAG, "startPreview");
 					mCamera.startPreview();
 				}
@@ -282,12 +271,6 @@ public class PortraitCameraView extends PortraitCameraBridgeViewBase implements 
 	@Override
 	protected boolean connectCamera(int width, int height)
 	{
-
-		/*
-		 * 1. We need to instantiate camera 2. We need to start thread which
-		 * will be getting frames
-		 */
-		/* First step - initialize camera connection */
 		Log.d(TAG, "Connecting to camera");
 		if (!initializeCamera(width, height)) return false;
 
@@ -305,10 +288,6 @@ public class PortraitCameraView extends PortraitCameraBridgeViewBase implements 
 	@Override
 	protected void disconnectCamera()
 	{
-		/*
-		 * 1. We need to stop thread which updating the frames 2. Stop camera
-		 * and release it
-		 */
 		Log.d(TAG, "Disconnecting from camera");
 		try
 		{
@@ -328,7 +307,6 @@ public class PortraitCameraView extends PortraitCameraBridgeViewBase implements 
 			mThread = null;
 		}
 
-		/* Now release camera */
 		releaseCamera();
 
 		mCameraFrameReady = false;
