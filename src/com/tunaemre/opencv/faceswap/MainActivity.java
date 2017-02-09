@@ -48,7 +48,7 @@ public class MainActivity extends ExtendedActivity
 			@Override
 			public void onClick(View v)
 			{
-				Toast.makeText(MainActivity.this, "Under developing.", Toast.LENGTH_SHORT).show();
+				Toast.makeText(MainActivity.this, "Under development.", Toast.LENGTH_SHORT).show();
 			}
 		});
 	}

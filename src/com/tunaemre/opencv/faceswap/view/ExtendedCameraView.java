@@ -7,7 +7,6 @@ import android.util.AttributeSet;
 
 public class ExtendedCameraView extends JavaCameraView
 {
-	
 	public ExtendedCameraView(Context context, int cameraId)
 	{
         super(context, cameraId);
