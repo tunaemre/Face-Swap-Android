@@ -15,9 +15,11 @@ import com.tunaemre.opencv.faceswap.enumerator.DownloaderStatus;
 import com.tunaemre.opencv.faceswap.util.CacheOperator;
 import com.tunaemre.opencv.faceswap.util.DialogOperator;
 import com.tunaemre.opencv.faceswap.util.NetworkOperator;
+import com.tunaemre.opencv.faceswap.util.PermissionOperator;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -33,7 +35,9 @@ public class DownloaderActivity extends ExtendedActivity
 	private FreshDownloadView downloadView = null;
 	private Animation tweenAnimation = null;
 
-	private LargeFileDownloader downloadFileService = null;
+	private FileDownloader fileDownloaderTask = null;
+	
+	private PermissionOperator permissionOperator = new PermissionOperator();
 
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -45,24 +49,51 @@ public class DownloaderActivity extends ExtendedActivity
 	@Override
 	protected void onDestroy()
 	{
-		if (downloadFileService != null)
+		if (fileDownloaderTask != null)
 		{
-			downloadFileService.cancel(true);
-			downloadFileService = null;
+			fileDownloaderTask.cancel(true);
+			fileDownloaderTask = null;
 		}
 
 		super.onDestroy();
 	}
-
+	
+	@Override
+	public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults)
+	{
+		if (requestCode == PermissionOperator.REQUEST_STORAGE_PERMISSION && grantResults[0] == PackageManager.PERMISSION_GRANTED)
+			checkPermission();
+		else if (requestCode == PermissionOperator.REQUEST_STORAGE_PERMISSION && grantResults[0] == PackageManager.PERMISSION_DENIED)
+		{
+			DialogOperator.ShowConfirm(this, "Storage permission should be granded.", new Handler()
+			{
+				@Override
+				public void dispatchMessage(Message msg)
+				{
+					checkPermission();
+				}
+			});
+		}
+	}
+	
 	@Override
 	protected void prepareActivity()
 	{
 		downloadView = (FreshDownloadView) findViewById(R.id.downloadProgressView);
-
 		tweenAnimation = AnimationUtils.loadAnimation(DownloaderActivity.this, R.anim.tween);
-		
 		downloadView.startAnimation(tweenAnimation);
 
+		checkPermission();
+	}
+	
+	private void checkPermission()
+	{
+		if (!permissionOperator.isStoragePermissionGranded(this))
+		{
+			permissionOperator.requestStoragePermission(this);
+			return;
+		}
+		
 		final Handler refreshConnections = new Handler()
 		{
 			public void handleMessage(Message msg)
@@ -83,7 +114,6 @@ public class DownloaderActivity extends ExtendedActivity
 					DialogOperator.ShowOfflineAlert(DownloaderActivity.this, refreshConnections);
 			}
 		});
-	
 	}
 
 	private void downloadFaceLandmarksFile()
@@ -91,12 +121,12 @@ public class DownloaderActivity extends ExtendedActivity
 		downloadView.clearAnimation();
 		downloadView.reset();
 
-		((TextView) findViewById(R.id.updateText)).setText("Downloading");
+		((TextView) findViewById(R.id.txtDownload)).setText("Downloading");
 
-		downloadFileService = new LargeFileDownloader(Constant.FaceLandmarksURL, Constant.FaceLandmarksDownloadPath, Constant.FaceLandmarksFileName);
+		fileDownloaderTask = new FileDownloader(Constant.FaceLandmarksURL, Constant.FaceLandmarksDownloadPath, Constant.FaceLandmarksFileName);
 	}
 
-	private class LargeFileDownloader extends AsyncTask<Void, Integer, DownloaderStatus>
+	private class FileDownloader extends AsyncTask<Void, Integer, DownloaderStatus>
 	{
 		private HttpURLConnection mConnection;
 
@@ -110,7 +140,7 @@ public class DownloaderActivity extends ExtendedActivity
 
 		private static final int MAX_BUFFER_SIZE = 256;
 
-		private LargeFileDownloader(String fileURL, String localPath, String localFileName)
+		private FileDownloader(String fileURL, String localPath, String localFileName)
 		{
 			this.mFileURL = fileURL;
 			this.mLocalPath = localPath;
@@ -216,6 +246,8 @@ public class DownloaderActivity extends ExtendedActivity
 		@Override
 		protected void onPostExecute(DownloaderStatus result)
 		{
+			fileDownloaderTask = null;
+			
 			if (result == DownloaderStatus.Success)
 			{
 				CacheOperator.getInstance(DownloaderActivity.this).setFaceLandmarksDownloaded(true);

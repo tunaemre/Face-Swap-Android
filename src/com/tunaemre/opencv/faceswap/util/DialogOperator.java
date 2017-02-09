@@ -20,7 +20,6 @@ public class DialogOperator
 				handler.sendEmptyMessage(0);
 			}
 		})
-		.setIcon(android.R.drawable.ic_dialog_alert)
 		.setCancelable(false)
 		.show();
 	}
@@ -43,7 +42,6 @@ public class DialogOperator
 				activity.finish();
 			}
 		})
-		.setIcon(android.R.drawable.ic_dialog_alert)
 		.setCancelable(false)
 		.show();
 	}
@@ -59,7 +57,6 @@ public class DialogOperator
 				activity.finish();
 			}
 		})
-		.setIcon(android.R.drawable.ic_dialog_alert)
 		.setCancelable(false)
 		.show();
 	}
@@ -83,7 +80,6 @@ public class DialogOperator
 				if (refreshHandler != null) refreshHandler.sendEmptyMessage(0);
 			}
 		})
-		.setIcon(android.R.drawable.ic_dialog_alert)
 		.setCancelable(false)
 		.show();
 

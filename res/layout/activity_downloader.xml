@@ -5,15 +5,14 @@
     android:background="@color/primary">
 
     <TextView
-        android:id="@+id/updateText"
+        android:id="@+id/txtDownload"
+        style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        style="?android:attr/textAppearanceLarge"
-        android:textColor="@color/accent"
-        android:text="Connecting"
-        android:padding="16dp"/>
+        android:padding="16dp"
+        android:textColor="@color/accent" />
 
     <com.pitt.library.fresh.FreshDownloadView
         android:id="@+id/downloadProgressView"

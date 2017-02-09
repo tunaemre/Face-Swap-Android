@@ -23,7 +23,7 @@
 							<builder autoBuildTarget="" command="C:/Android/NDK/android-ndk-r13b/ndk-build.cmd" enableAutoBuild="true" enableCleanBuild="false" id="org.eclipse.cdt.build.core.settings.default.builder.180541221" incrementalBuildTarget="" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" stopOnErr="false" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.791069665" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs"/>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.1894181736" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
-								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.367755440" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
+								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.367755440" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="ANDROID=1"/>
 								</option>
 								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.588929884" languageId="org.eclipse.cdt.core.assembly" languageName="Assembly" sourceContentType="org.eclipse.cdt.core.asmSource" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
