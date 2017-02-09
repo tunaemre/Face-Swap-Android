@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:src="@drawable/logo_header"/>
+        android:src="@drawable/logo_header" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,24 +19,25 @@
 
         <Button
             android:id="@+id/btnMainFaceSwap"
+            style="@style/TextAppearance.AppCompat.Display1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:background="@color/accent"
+            android:fontFamily="sans-serif-light"
             android:text="Face Swap"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@color/accent_text" />
 
         <Button
             android:id="@+id/btnMainPhotoMask"
+            style="@style/TextAppearance.AppCompat.Display1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:background="@color/accent_dark"
+            android:fontFamily="sans-serif-light"
             android:text="Photo Mask"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@color/accent_text" />
-
     </LinearLayout>
 
 </LinearLayout>
