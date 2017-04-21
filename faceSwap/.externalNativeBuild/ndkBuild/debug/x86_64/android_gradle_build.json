@@ -1,0 +1,59 @@
+{
+  "buildFiles": [
+    "C:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Android.mk",
+    "C:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Android\\NDK\\android-ndk-r13b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Face-Swap-Android_Gradle/faceSwap/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\build\\intermediates\\ndkBuild\\debug\\lib clean"
+  ],
+  "libraries": {
+    "detectionbasedtracker-debug-x86_64": {
+      "buildCommand": "C:\\Android\\NDK\\android-ndk-r13b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Face-Swap-Android_Gradle/faceSwap/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\build\\intermediates\\ndkBuild\\debug\\lib C:/Face-Swap-Android_Gradle/faceSwap/build/intermediates/ndkBuild/debug/obj/local/x86_64/libdetectionbasedtracker.so",
+      "toolchain": "toolchain-x86_64",
+      "abi": "x86_64",
+      "artifactName": "detectionbasedtracker",
+      "files": [
+        {
+          "src": "C:\\Face-S~1\\faceSwap\\src\\main\\jni\\DetectionBasedTracker.cpp",
+          "flags": "\"-gcc-toolchain\" \"C:/Android/NDK/android-ndk-r13b/build//../toolchains/x86_64-4.9/prebuilt/windows-x86_64\" \"-target\" \"x86_64-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-fno-exceptions\" \"-fno-rtti\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-IC:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include/opencv\" \"-IC:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\" \"-IC:/Face-Swap-Android_Gradle/faceSwap/src/main/jni\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/libs/x86_64/include\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include/backward\" \"-IC:/Face-Swap-Android_Gradle/faceSwap/src/main/jni\" \"-DANDROID\" \"-fPIC\" \"-DANDROID\" \"-fsigned-char\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-std\u003dc++11\" \"-frtti\" \"-fexceptions\" \"-isystem\" \"C:/Android/NDK/android-ndk-r13b/build//../platforms/android-21/arch-x86_64/usr/include\""
+        }
+      ],
+      "output": "C:\\Face-Swap-Android_Gradle\\faceSwap\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86_64\\libdetectionbasedtracker.so"
+    },
+    "dlib-debug-x86_64": {
+      "buildCommand": "C:\\Android\\NDK\\android-ndk-r13b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Face-Swap-Android_Gradle/faceSwap/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\build\\intermediates\\ndkBuild\\debug\\lib C:/Face-Swap-Android_Gradle/faceSwap/build/intermediates/ndkBuild/debug/obj/local/x86_64/libdlib.so",
+      "toolchain": "toolchain-x86_64",
+      "abi": "x86_64",
+      "artifactName": "dlib",
+      "files": [
+        {
+          "src": "C:\\Face-S~1\\faceSwap\\src\\main\\jni\\dlib\\all\\source.cpp",
+          "flags": "\"-gcc-toolchain\" \"C:/Android/NDK/android-ndk-r13b/build//../toolchains/x86_64-4.9/prebuilt/windows-x86_64\" \"-target\" \"x86_64-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-fno-exceptions\" \"-fno-rtti\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/libs/x86_64/include\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include/backward\" \"-IC:/Face-Swap-Android_Gradle/faceSwap/src/main/jni\" \"-DANDROID\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-std\u003dc++11\" \"-frtti\" \"-fexceptions\" \"-isystem\" \"C:/Android/NDK/android-ndk-r13b/build//../platforms/android-21/arch-x86_64/usr/include\""
+        }
+      ],
+      "output": "C:\\Face-Swap-Android_Gradle\\faceSwap\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86_64\\libdlib.so"
+    },
+    "faceswapper-debug-x86_64": {
+      "buildCommand": "C:\\Android\\NDK\\android-ndk-r13b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Face-Swap-Android_Gradle/faceSwap/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\build\\intermediates\\ndkBuild\\debug\\lib C:/Face-Swap-Android_Gradle/faceSwap/build/intermediates/ndkBuild/debug/obj/local/x86_64/libfaceswapper.so",
+      "toolchain": "toolchain-x86_64",
+      "abi": "x86_64",
+      "artifactName": "faceswapper",
+      "files": [
+        {
+          "src": "C:\\Face-S~1\\faceSwap\\src\\main\\jni\\FaceSwapper.cpp",
+          "flags": "\"-gcc-toolchain\" \"C:/Android/NDK/android-ndk-r13b/build//../toolchains/x86_64-4.9/prebuilt/windows-x86_64\" \"-target\" \"x86_64-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-fno-exceptions\" \"-fno-rtti\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-IC:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include/opencv\" \"-IC:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/libs/x86_64/include\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include/backward\" \"-IC:/Face-Swap-Android_Gradle/faceSwap/src/main/jni\" \"-DANDROID\" \"-fPIC\" \"-DANDROID\" \"-fsigned-char\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-std\u003dc++11\" \"-frtti\" \"-fexceptions\" \"-isystem\" \"C:/Android/NDK/android-ndk-r13b/build//../platforms/android-21/arch-x86_64/usr/include\""
+        }
+      ],
+      "output": "C:\\Face-Swap-Android_Gradle\\faceSwap\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86_64\\libfaceswapper.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-x86_64": {
+      "cppCompilerExecutable": "C:\\Android\\NDK\\android-ndk-r13b\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}
