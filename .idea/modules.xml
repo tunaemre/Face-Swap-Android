@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Face-Swap-Android_Gradle.iml" filepath="$PROJECT_DIR$/Face-Swap-Android_Gradle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faceSwap/faceSwap.iml" filepath="$PROJECT_DIR$/faceSwap/faceSwap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/freshDownloadView/freshDownloadView.iml" filepath="$PROJECT_DIR$/freshDownloadView/freshDownloadView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openCVLibrary/openCVLibrary.iml" filepath="$PROJECT_DIR$/openCVLibrary/openCVLibrary.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,59 @@
+{
+  "buildFiles": [
+    "C:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Android.mk",
+    "C:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Android\\NDK\\android-ndk-r13b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi NDK_ALL_ABIS\u003darmeabi NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-17 NDK_OUT\u003dC:/Face-Swap-Android_Gradle/faceSwap/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\build\\intermediates\\ndkBuild\\debug\\lib clean"
+  ],
+  "libraries": {
+    "dlib-debug-armeabi": {
+      "buildCommand": "C:\\Android\\NDK\\android-ndk-r13b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi NDK_ALL_ABIS\u003darmeabi NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-17 NDK_OUT\u003dC:/Face-Swap-Android_Gradle/faceSwap/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\build\\intermediates\\ndkBuild\\debug\\lib C:/Face-Swap-Android_Gradle/faceSwap/build/intermediates/ndkBuild/debug/obj/local/armeabi/libdlib.so",
+      "toolchain": "toolchain-armeabi",
+      "abi": "armeabi",
+      "artifactName": "dlib",
+      "files": [
+        {
+          "src": "C:\\Face-S~1\\faceSwap\\src\\main\\jni\\dlib\\all\\source.cpp",
+          "flags": "\"-gcc-toolchain\" \"C:/Android/NDK/android-ndk-r13b/build//../toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64\" \"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-fno-integrated-as\" \"-g\" \"-target\" \"armv5te-none-linux-androideabi\" \"-march\u003darmv5te\" \"-mtune\u003dxscale\" \"-msoft-float\" \"-fno-exceptions\" \"-fno-rtti\" \"-mthumb\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include/backward\" \"-IC:/Face-Swap-Android_Gradle/faceSwap/src/main/jni\" \"-DANDROID\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-std\u003dc++11\" \"-frtti\" \"-fexceptions\" \"-isystem\" \"C:/Android/NDK/android-ndk-r13b/build//../platforms/android-17/arch-arm/usr/include\""
+        }
+      ],
+      "output": "C:\\Face-Swap-Android_Gradle\\faceSwap\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\armeabi\\libdlib.so"
+    },
+    "faceswapper-debug-armeabi": {
+      "buildCommand": "C:\\Android\\NDK\\android-ndk-r13b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi NDK_ALL_ABIS\u003darmeabi NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-17 NDK_OUT\u003dC:/Face-Swap-Android_Gradle/faceSwap/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\build\\intermediates\\ndkBuild\\debug\\lib C:/Face-Swap-Android_Gradle/faceSwap/build/intermediates/ndkBuild/debug/obj/local/armeabi/libfaceswapper.so",
+      "toolchain": "toolchain-armeabi",
+      "abi": "armeabi",
+      "artifactName": "faceswapper",
+      "files": [
+        {
+          "src": "C:\\Face-S~1\\faceSwap\\src\\main\\jni\\FaceSwapper.cpp",
+          "flags": "\"-gcc-toolchain\" \"C:/Android/NDK/android-ndk-r13b/build//../toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64\" \"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-fno-integrated-as\" \"-g\" \"-target\" \"armv5te-none-linux-androideabi\" \"-march\u003darmv5te\" \"-mtune\u003dxscale\" \"-msoft-float\" \"-fno-exceptions\" \"-fno-rtti\" \"-mthumb\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-IC:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include/opencv\" \"-IC:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include/backward\" \"-IC:/Face-Swap-Android_Gradle/faceSwap/src/main/jni\" \"-DANDROID\" \"-fPIC\" \"-DANDROID\" \"-fsigned-char\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-std\u003dc++11\" \"-frtti\" \"-fexceptions\" \"-isystem\" \"C:/Android/NDK/android-ndk-r13b/build//../platforms/android-17/arch-arm/usr/include\""
+        }
+      ],
+      "output": "C:\\Face-Swap-Android_Gradle\\faceSwap\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\armeabi\\libfaceswapper.so"
+    },
+    "detectionbasedtracker-debug-armeabi": {
+      "buildCommand": "C:\\Android\\NDK\\android-ndk-r13b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi NDK_ALL_ABIS\u003darmeabi NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-17 NDK_OUT\u003dC:/Face-Swap-Android_Gradle/faceSwap/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dC:\\Face-Swap-Android_Gradle\\faceSwap\\build\\intermediates\\ndkBuild\\debug\\lib C:/Face-Swap-Android_Gradle/faceSwap/build/intermediates/ndkBuild/debug/obj/local/armeabi/libdetectionbasedtracker.so",
+      "toolchain": "toolchain-armeabi",
+      "abi": "armeabi",
+      "artifactName": "detectionbasedtracker",
+      "files": [
+        {
+          "src": "C:\\Face-S~1\\faceSwap\\src\\main\\jni\\DetectionBasedTracker.cpp",
+          "flags": "\"-gcc-toolchain\" \"C:/Android/NDK/android-ndk-r13b/build//../toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64\" \"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-fno-integrated-as\" \"-g\" \"-target\" \"armv5te-none-linux-androideabi\" \"-march\u003darmv5te\" \"-mtune\u003dxscale\" \"-msoft-float\" \"-fno-exceptions\" \"-fno-rtti\" \"-mthumb\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-IC:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include/opencv\" \"-IC:/Users/t-emre/Desktop/OpenCV-android-sdk/sdk/native/jni/include\" \"-IC:/Face-Swap-Android_Gradle/faceSwap/src/main/jni\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include\" \"-IC:/Android/NDK/android-ndk-r13b/build//../sources/cxx-stl/gnu-libstdc++/4.9/include/backward\" \"-IC:/Face-Swap-Android_Gradle/faceSwap/src/main/jni\" \"-DANDROID\" \"-fPIC\" \"-DANDROID\" \"-fsigned-char\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-std\u003dc++11\" \"-frtti\" \"-fexceptions\" \"-isystem\" \"C:/Android/NDK/android-ndk-r13b/build//../platforms/android-17/arch-arm/usr/include\""
+        }
+      ],
+      "output": "C:\\Face-Swap-Android_Gradle\\faceSwap\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\armeabi\\libdetectionbasedtracker.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-armeabi": {
+      "cppCompilerExecutable": "C:\\Android\\NDK\\android-ndk-r13b\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

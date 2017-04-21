@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark" >
+
+    <com.tunaemre.opencv.faceswap.view.ExtendedCameraView
+        android:id="@+id/cameraViewOpenCV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imgFaceSwapMask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/face_double_mask" />
+
+    <ImageView
+        android:id="@+id/imgFaceSwapMaskLeftBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imgFaceSwapMask"
+        android:background="@drawable/face_mask_border" />
+
+    <ImageView
+        android:id="@+id/imgFaceSwapMaskRightBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imgFaceSwapMask"
+        android:background="@drawable/face_mask_border" />
+
+    <ImageView
+        android:id="@+id/imgFaceSwapMaskTopBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imgFaceSwapMask"
+        android:layout_alignLeft="@+id/imgFaceSwapMask"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imgFaceSwapMask"
+        android:background="@drawable/face_mask_border" />
+
+    <ImageView
+        android:id="@+id/imgFaceSwapMaskBottomBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgFaceSwapMask"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imgFaceSwapMask"
+        android:layout_below="@+id/imgFaceSwapMask"
+        android:background="@drawable/face_mask_border" />
+
+    <ImageView
+        android:id="@+id/imgFaceSwapCameraShootMask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aaffffff"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btnFaceSwapSwitchCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#aa000000"
+            android:padding="10dp"
+            android:src="@drawable/ic_camera_front_white_36dp" />
+
+        <ImageButton
+            android:id="@+id/btnFaceSwapCaptureImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#aa000000"
+            android:padding="10dp"
+            android:src="@drawable/ic_camera_white_36dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnFaceSwapShowCapturedImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#aa000000"
+        android:padding="10dp"
+        android:src="@drawable/ic_photo_library_white_36dp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
