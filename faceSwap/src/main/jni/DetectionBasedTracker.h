@@ -1,7 +1,7 @@
 #include <jni.h>
 
 #include <opencv2/core/core.hpp>
-#include <opencv2/objdetect.hpp>
+#include <opencv2/contrib/detection_based_tracker.hpp>
 
 #include <string>
 #include <vector>
@@ -25,7 +25,7 @@ JNIEXPORT void JNICALL Java_org_opencv_facedetect_IDetectionBasedTracker_nativeS
 
 JNIEXPORT void JNICALL Java_org_opencv_facedetect_IDetectionBasedTracker_nativeSetFaceSize(JNIEnv *, jclass, jlong, jint);
 
-JNIEXPORT void JNICALL Java_org_opencv_facedetect_IDetectionBasedTracker_nativeDetect(JNIEnv *, jclass, jlong thiz, jlong, jlong);
+JNIEXPORT void JNICALL Java_org_opencv_facedetect_IDetectionBasedTracker_nativeDetect(JNIEnv *, jclass, jlong, jlong, jlong);
 
 #ifdef __cplusplus
 }

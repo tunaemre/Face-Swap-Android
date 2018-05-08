@@ -1,0 +1,29 @@
+{
+  "buildFiles": [
+    "C:\\Face-Swap-Android\\faceSwap\\src\\main\\jni\\Android.mk",
+    "C:\\Face-Swap-Android\\faceSwap\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Android\\NDK\\android-ndk-r13b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Face-Swap-Android\\faceSwap\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Face-Swap-Android\\faceSwap\\src\\main\\jni\\Application.mk APP_ABI\u003dmips NDK_ALL_ABIS\u003dmips NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-17 NDK_OUT\u003dC:/Face-Swap-Android/faceSwap/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dC:\\Face-Swap-Android\\faceSwap\\build\\intermediates\\ndkBuild\\release\\lib clean"
+  ],
+  "libraries": {
+    "detectionbasedtracker-release-mips": {
+      "artifactName": "detectionbasedtracker",
+      "buildCommand": "C:\\Android\\NDK\\android-ndk-r13b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Face-Swap-Android\\faceSwap\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Face-Swap-Android\\faceSwap\\src\\main\\jni\\Application.mk APP_ABI\u003dmips NDK_ALL_ABIS\u003dmips NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-17 NDK_OUT\u003dC:/Face-Swap-Android/faceSwap/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dC:\\Face-Swap-Android\\faceSwap\\build\\intermediates\\ndkBuild\\release\\lib C:/Face-Swap-Android/faceSwap/build/intermediates/ndkBuild/release/obj/local/mips/libdetectionbasedtracker.so",
+      "abi": "mips",
+      "output": "C:\\Face-Swap-Android\\faceSwap\\build\\intermediates\\ndkBuild\\release\\obj\\local\\mips\\libdetectionbasedtracker.so"
+    },
+    "dlib-release-mips": {
+      "artifactName": "dlib",
+      "buildCommand": "C:\\Android\\NDK\\android-ndk-r13b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Face-Swap-Android\\faceSwap\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Face-Swap-Android\\faceSwap\\src\\main\\jni\\Application.mk APP_ABI\u003dmips NDK_ALL_ABIS\u003dmips NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-17 NDK_OUT\u003dC:/Face-Swap-Android/faceSwap/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dC:\\Face-Swap-Android\\faceSwap\\build\\intermediates\\ndkBuild\\release\\lib C:/Face-Swap-Android/faceSwap/build/intermediates/ndkBuild/release/obj/local/mips/libdlib.so",
+      "abi": "mips",
+      "output": "C:\\Face-Swap-Android\\faceSwap\\build\\intermediates\\ndkBuild\\release\\obj\\local\\mips\\libdlib.so"
+    },
+    "faceswapper-release-mips": {
+      "artifactName": "faceswapper",
+      "buildCommand": "C:\\Android\\NDK\\android-ndk-r13b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Face-Swap-Android\\faceSwap\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dC:\\Face-Swap-Android\\faceSwap\\src\\main\\jni\\Application.mk APP_ABI\u003dmips NDK_ALL_ABIS\u003dmips NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-17 NDK_OUT\u003dC:/Face-Swap-Android/faceSwap/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dC:\\Face-Swap-Android\\faceSwap\\build\\intermediates\\ndkBuild\\release\\lib C:/Face-Swap-Android/faceSwap/build/intermediates/ndkBuild/release/obj/local/mips/libfaceswapper.so",
+      "abi": "mips",
+      "output": "C:\\Face-Swap-Android\\faceSwap\\build\\intermediates\\ndkBuild\\release\\obj\\local\\mips\\libfaceswapper.so"
+    }
+  }
+}
