@@ -31,7 +31,7 @@ endif
 LOCAL_SRC_FILES := C:/Face-Swap-Android/faceSwap/src/main/jni/DetectionBasedTracker.cpp
 
 LOCAL_C_INCLUDES += $(LOCAL_PATH)
-LOCAL_LDLIBS += -llog -ldl
+LOCAL_LDLIBS += -llog -ldl -latomic
 
 LOCAL_MODULE := detectionbasedtracker
 
@@ -48,7 +48,7 @@ endif
 # LOCAL_SRC_FILES := ../$(LOCAL_PATH)/FaceSwapper.cpp
 LOCAL_SRC_FILES := C:/Face-Swap-Android/faceSwap/src/main/jni/FaceSwapper.cpp
 
-LOCAL_LDLIBS += -llog -ldl
+LOCAL_LDLIBS += -llog -ldl -latomic
 
 LOCAL_MODULE := faceswapper
 
