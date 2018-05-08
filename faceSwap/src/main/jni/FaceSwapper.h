@@ -1,9 +1,9 @@
 #include <jni.h>
 #include <android/log.h>
 
-#include <opencv2/imgproc.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/core/mat.hpp>
-#include <opencv2/core/types.hpp>
+#include <opencv2/core/types_c.h>
 
 #include "dlib/geometry/rectangle.h"
 #include "dlib/image_processing/full_object_detection.h"
