@@ -1,0 +1,5 @@
+Face Swap - Privacy Policy
+
+The app doesn't collect any information about the device nor the user.
+
+It needs access to the camera though. It will access to the camera only when the app is open and the UI visible. Faces processed in real time and never saved anywhere.
